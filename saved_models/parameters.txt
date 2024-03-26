@@ -1,0 +1,32 @@
+save_path=saved_models
+command_line_args=Namespace(save_path='saved_models', save_step=1000, episodes=1000, init_weights=False, lr=0.1, hidden_units=40, lamda=0.7, model=None, name='exp1', type='nn', seed=123, func=<function args_train at 0x0000018A41714540>)
+type=nn
+hidden_units=40
+init_weights=False
+alpha=0.1
+lamda=0.7
+n_episodes=1000
+save_step=1000
+start_episode=0
+name_experiment=exp1
+env=backgammon-v0
+restored_model=None
+seed=123
+eligibility=True
+optimizer=None
+modules=[TDGammon(
+  (hidden): Sequential(
+    (0): Linear(in_features=198, out_features=40, bias=True)
+    (1): Sigmoid()
+  )
+  (output): Sequential(
+    (0): Linear(in_features=40, out_features=1, bias=True)
+    (1): Sigmoid()
+  )
+), Sequential(
+  (0): Linear(in_features=198, out_features=40, bias=True)
+  (1): Sigmoid()
+), Linear(in_features=198, out_features=40, bias=True), Sigmoid(), Sequential(
+  (0): Linear(in_features=40, out_features=1, bias=True)
+  (1): Sigmoid()
+), Linear(in_features=40, out_features=1, bias=True), Sigmoid()]
